@@ -6,17 +6,17 @@
     float: left;
 }
 
-.navbar .navbar-toggle.toggle-left {
+.navbar .navbar-toggler.toggle-left {
     float: left;
     margin-left: 15px;
 }
 
-.navbar .navbar-toggle.toggle-right {
+.navbar .navbar-toggler.toggle-right {
     float: right;
     margin-right: 15px;
 }
 
-.navbar .navbar-toggle.toggle-sidebar, [data-toggle="sidebar"] {
+.navbar .navbar-toggler.toggle-sidebar, [data-toggle="sidebar"] {
     display: block;
 }
 
@@ -41,7 +41,7 @@
 }
 
 /* css to override hiding the sidebar according to different screen sizes */
-.row .sidebar.sidebar-left.sidebar-xs-show {
+.row .sidebar.sidebar-left.sidebar-show {
     left: 0;
     -webkit-transform: translate(0,0);
     -ms-transform: translate(0,0);
@@ -51,7 +51,7 @@
 }
 
 /*right sidebar is untested */
-.row .sidebar.sidebar-right.sidebar-xs-show {
+.row .sidebar.sidebar-right.sidebar-show {
     right: 0;
     -webkit-transform: translate(0,0);
     -ms-transform: translate(0,0);
@@ -112,6 +112,26 @@
     }
 
     .row .sidebar.sidebar-right.sidebar-lg-show {
+        right: 0;
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+@media (min-width: 1200px) {
+    .row .sidebar.sidebar-left.sidebar-xl-show {
+        left: 0;
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+
+    .row .sidebar.sidebar-right.sidebar-xl-show {
         right: 0;
         -webkit-transform: translate(0,0);
         -moz-transform: translate(0,0);
